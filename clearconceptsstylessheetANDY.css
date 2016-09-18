@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200);
+
+@media (max-width: 600px) {
+  #header h1{
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 600px) {
+  div#main{
+      -webkit-column-count: 4;
+         -moz-column-count: 4;
+              column-count: 4;
+      column-width:25%;
+      -webkit-column-gap: 8px;
+    }
+  }
+#header h1{
+    font-size: 6em;
+  }
+
+body{
+  xwidth: 1200px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#header h1{
+  font-family:Cursive;
+  font-style:font-effect;
+  color:#fff;
+  padding:0px;
+  margin: 0px 20px;
+  text-shadow:1px 1px 0 lime,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    0px 1px 0 #000,
+    1px 0px 0 #000,
+    0px -1px 0 #000,
+    -1px 0px 0 #000;
+}
+
+#header h2{
+  font-size: 1.5em;
+  margin:0 20px;
+  padding: 0;
+  color:pink;
+}
+
+nav{
+  clear:both;
+  text-align: right;
+  background-color: #aaa;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav a{
+  padding: 4px 10px;
+  text-decoration:none;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #aaa;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 100;
+  display:inline-block;
+}
+
+
+
+div#main{
+  margin:20px 20px;
+  padding: 0px auto;
+  clear:both;
+  font-size:0;
+}
+
+#main .tile{
+  xwidth:300px;
+  height:250px;
+  margin:8px 4px;
+  font-size:16px;
+  break-inside:avoid;
+  -webkit-column-break-inside:avoid;
+  page-break-inside:avoid;
+  background-position:center center;
+  background-size:cover;
+}
+
+#main .tile.heron {
+  background-image:url(images/flyingheron1.jpg);
+  margin: 0px 4px 8px 4px;
+  /*to fix the bigger top margin in column 1*/
+}
+
+#main .tile.artdeco1 { background-image: url(images/artdeco1.jpg) }
+#main .tile.artdeco2 { background-image: url(images/artdeco2.jpg)}
+#main .tile.batman { background-image: url(images/batman.jpg) }
+#main .tile.bullseye { background-image: url(images/bullseye.png) }
+#main .tile.canal { background-image: url(images/canal.jpg) }
+#main .tile.circles { background-image: url(images/circles.jpg) }
+#main .tile.doors { background-image: url(images/doors.jpg) }
+#main .tile.eagle { background-image: url(images/eagle.jpg) }
+#main .tile.flyingheron1 { background-image: url(images/flyingheron1.jpg) }
+#main .tile.geodeowl { background-image: url(images/geodeowl.jpg) }
+#main .tile.greenlamp { background-image: url(images/greenlamp.jpg) }
+#main .tile.lilly { background-image: url(images/lilly.jpg) }
+#main .tile.moonbranchleaves { background-image: url(images/moonbranchleaves.jpg) }
+#main .tile.robin { background-image: url(images/robin.jpg) }
+#main .tile.wave { background-image: url(images/wave.jpg) }
+#main .tile.wlamp { background-image: url(images/wlamp.jpg) }
+#main .tile.wolf { background-image: url(images/wolf.jpg) }
+
+
+#main .tile.tall{
+  height:508px;
+}
+
+div#footer{
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #aaa;
+  font-weight: 100;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+  padding: 4px 10px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+a:hover{
+  background-color: #fff;
+  color: black;
+}

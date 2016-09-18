@@ -1,0 +1,258 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200);
+
+html{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
+ body{
+  overflow-x:hidden;
+  overflow-y:scroll;
+  margin: 0px auto;
+  padding: 0px;
+  height: 100%;
+}
+
+#wrapper{ /*all of this for sticky footer*/
+  min-height:100%;
+  margin: 0 auto -26px auto;
+  padding: 0;
+  /*this next commented line is deleting the header when in percentages:*/
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height:100%;
+}
+
+#header{
+  height:15%;
+}
+
+#header img{
+  max-width:1400px;
+  width:80%;
+}
+
+nav{
+  clear:both;
+  text-align: right;
+  background-color: #aaa;
+  font-size: 0px;
+  padding: 0px;
+  margin: 0px;
+  height: 5%;
+}
+
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+ul li {
+  padding: 4px 0px;
+  text-decoration:none;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #aaa;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 100;
+  display:inline-block;
+  position:relative; /*this is to position the submenu off of this*/
+}
+
+/*nav ul li:hover{
+  background-color: #aaa;
+}*/
+
+
+ul li:hover > ul{
+  display:block; /*to make submenu visible again */
+}
+
+a#rightmargin {margin-right: 20px;
+}
+
+div#gallerymain{background-image: url(gallerybackground.png);
+                  background-position: 50% 0%;
+                  padding:30%;
+                  background-size: 90%;
+                  margin: 20px 0 46px 0;
+                  background-repeat: no-repeat;
+                  }
+div#main{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:24px;
+  margin: 0px;
+  height:400px;
+  position:relative;
+  }
+
+p.about{
+  width:70%;
+  text-align:left;
+  padding: 0 15%;
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:24px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100;
+}
+
+div.center{
+  text-align:center;
+  width:70%;
+  padding: 0 15%;
+  position:relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:24px;
+}
+
+/*a.buy{
+  text-decoration: none;
+  color:#aaa;
+  float:right;
+  margin: 0px;
+  padding: 0px 20px 0px 20px;
+  font-size:40px;
+  text-align: right;
+}
+
+a.buy:hover{
+  text-decoration: none;
+  color:black;
+  float:right;
+  margin:0px;
+  padding:0px 20px 0px 20px;
+  font-size: 40px;
+  text-align: right;
+}
+*/
+
+div#footer{
+  text-align: center;
+  background-color: #aaa;
+  font-weight: 100;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  padding: 2px 0px 4px 0px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 26px/*made this bigger so sits above the fold but no white space below*/
+  display: block;
+}
+
+div#shop{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:24px;
+  margin:0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  height: 70%;
+  display:-webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-flex-direction: row;
+}
+
+
+div.flexitem{
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  margin: 2% auto 2% auto;
+}
+
+h1{
+  font-size:20px;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+}
+
+img.paddingtop{
+  padding-top: 7%;
+  height: auto;
+  width: 40%;
+}
+
+h1.paddingtop{
+  padding-top: 8%;
+}
+
+img.shop{
+  height: auto;
+  width: 40%;
+  opacity: 1;
+}
+
+.shop:hover{
+  opacity: .7;
+}
+
+a{
+  text-decoration: none;
+  color:#aaa;
+  margin: 0;
+}
+
+a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+#footer a, li a{
+  text-decoration:none;
+  color:white;
+  padding: 0px 10px;
+  font-family:'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+#footer a:hover, li a:hover{
+  background-color: #fff;
+  color: #aaa;
+  padding: 5px 10px; /*have to make it 5px due to the bottom line of pixels not changing color,
+  inspect element has the nav 1px taller than the a */
+}
+
+
+
+
+@media (max-width: 600px) {
+  /*--------------------*/div#gallerymain{
+  }
+  p.about{
+    transform: translateY(0%);
+    top: 0%;
+    margin: 20px 0px 0px 0px;
+    padding: 0 15% 60px 15%;
+  }
+  div#main{height: auto;
+    margin:   0;
+  }
+  div.center{width: 100%;
+    transform: translateY(0%);
+    top: 0%;
+    padding: 0;
+  }
+  div#footer{height: auto;
+    margin: -50px 0px 0px 0px;
+  }
+  div.flexitem{width: 100%;
+    padding: 20px 0px 60px 0px;
+  }
+  #shop {
+    width: 100%;
+  }
+  nav{
+    text-align:center;
+  }
+  #shop a{
+    font-size: 14px;
+  }
+}
